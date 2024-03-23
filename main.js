@@ -44,12 +44,12 @@ console.log(duplicarNumero(9))
 function caracterInicial(string) {
     if (typeof string !== "string") {
         return "Debo ser ejecutado como string"
-    } 
+    }
     if (string == "") {
-        return  "Debo ser ejecutado como string no vacio"
+        return "Debo ser ejecutado como string no vacio"
     }
     return string.charAt(0)
-   
+
 }
 console.log(caracterInicial("hola"));
 
@@ -57,12 +57,49 @@ console.log(caracterInicial("hola"));
 function ultimoCaracter(string) {
     if (typeof string !== "string") {
         return "Debo ser ejecutado como string"
-    } 
+    }
     if (string == "") {
-        return  "Debo ser ejecutado como string no vacio"
+        return "Debo ser ejecutado como string no vacio"
     }
     return string.slice(-1)
-   
+
 }
 console.log(ultimoCaracter("hola"));
 
+function cuentaCaracter(string) {
+    if (typeof string !== "string") {
+        return "Debo ser ejecutada con un string"
+    }
+    if (typeof string == "string") {
+        return string.length
+    }
+
+}
+console.log(cuentaCaracter("hola"));
+
+function esPalindromo(text) {
+    let invertedText = text.split("").reverse().join("");
+    if (text === invertedText) {
+        return "Es palindromo"
+    } else {
+        return "No es palindromo"
+    }
+}
+console.log(esPalindromo("somos"));
+
+function getPrecioMostrar(text) {
+    if (typeof text !== "number") {
+        return "No es un formato correcto"
+    }
+    if (typeof text === "number") {
+        return text.toFixed(2) + "€"
+    }
+}
+console.log(getPrecioMostrar(3));
+
+function division(a, b) {
+    return a / b
+}
+console.log(23 / 4);
+
+//faltan los 2 últimos y los extras
