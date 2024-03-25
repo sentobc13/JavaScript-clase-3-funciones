@@ -102,4 +102,29 @@ function division(a, b) {
 }
 console.log(23 / 4);
 
-//faltan los 2 últimos y los extras
+/*function array5oMas(array) {
+    let arrayNumeros = [];
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] >= 5) {
+            arrayNumeros.push(array[i]);
+        }
+
+        return arrayNumeros;
+    }
+}
+let numeros = [6, 2, 8, 5, 3, 9];
+let arrayNumeros = array5oMas(numeros);
+console.log(arrayNumeros);*/
+
+function nums5oMayor(array) {
+    let numerosArray = [];
+    for (let numero of array) {
+        if (numero >= 5) {
+            numerosArray.push(numero);
+        }
+    }
+    return numerosArray;
+}
+let numeros = [4,6,7,2,5];
+let numerosArray = nums5oMayor(numeros);
+console.log(numerosArray);
